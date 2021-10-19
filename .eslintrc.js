@@ -46,10 +46,19 @@ module.exports = {
     "react/display-name": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
   },
   settings: {
     react: {
       version: "detect",
+    },
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
     },
   },
 };

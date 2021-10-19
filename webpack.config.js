@@ -33,6 +33,13 @@ const config = {
           filename: "static/[hash][ext]",
         },
       },
+      {
+        test: /\.(woff2)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "font/[hash][ext]",
+        },
+      },
     ],
   },
   plugins: [
@@ -45,6 +52,7 @@ const config = {
     new CleanWebpackPlugin(),
   ],
   resolve: {
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
     extensions: [".tsx", ".ts", ".js"],
   },
   output: {

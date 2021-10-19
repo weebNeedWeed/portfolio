@@ -1,10 +1,13 @@
 import ReactDOM from "react-dom";
-import img from "../assets/test.png";
+import { ThemeProvider } from "@mui/material/styles";
+import App from "components/App/App.index";
+import customTheme from "commons/theme";
+import CssBaseline from "@mui/material/CssBaseline";
 
-const App = () => (
-  <h1>
-    <img src={img} alt="" />
-  </h1>
+ReactDOM.render(
+  <ThemeProvider theme={customTheme}>
+    <CssBaseline />
+    <App />
+  </ThemeProvider>,
+  document.getElementById("root"),
 );
-
-ReactDOM.render(<App />, document.getElementById("root"));
