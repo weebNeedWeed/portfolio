@@ -1,29 +1,65 @@
-import { styled } from "@mui/material/styles";
+import { styled } from "@mui/material";
+import Nav from "layouts/Nav/Nav.index";
 
-const StyledDiv = styled("div")(({ theme }: any) => ({
-  color: theme.custom.color,
-  fontFamily: theme.custom.typography.sans,
-  fontWeight: 400,
-  fontSize: 20,
-}));
-const StyledDiv2 = styled("div")(({ theme }: any) => ({
-  color: theme.custom.color,
-  fontFamily: theme.custom.typography.mono,
-  fontWeight: 600,
-  fontSize: 100,
+const StyledWrapper = styled("div")(({ theme }: any) => ({
+  backgroundColor: theme.custom.color.navy,
+  width: "100%",
+  height: "100%",
+  position: "relative",
+  paddingTop: "100px",
 }));
 
 function App() {
   return (
-    <div>
-      <StyledDiv>
-        Hello! My name is Brittany and I enjoy creating things that live on the
-        internet. My interest in web development started back in 2012 when I
-        decided to try editing custom Tumblr themes — turns out hacking together
-        a custom reblog button taught me a lot about HTML & CSS!
-      </StyledDiv>
-      <StyledDiv2>sadasidias</StyledDiv2>
-    </div>
+    <StyledWrapper>
+      <Nav />
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+      obcaecati aliquam pariatur? Minus, sunt asperiores ex perspiciatis aut
+      hic, consequatur tempora nobis, incidunt laborum sed nemo. Culpa
+      voluptatem voluptates enim.eeeeeem ipsum dolor, sit amet consectetur
+      adipisicing elit. Blanditiis obcaecati aliquam pariatur? Minus, sunt
+      asperiores ex perspiciatis aut hic, consequatur tempora nm ipsum dolor,
+      sit amet consectetur adipisicing elit. Blanditiis obcaecati aliquam
+      pariatur? Minus, sunt asperiores ex perspiciatis aut hic, consequatur
+      tempora nm ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis
+      obcaecati aliquam pariatur? Minus, sunt asperiores ex perspiciatis aut
+      hic, consequatur tempora nm ipsum dolor, sit amet consectetur adipisicing
+      elit. Blanditiis obcaecati aliquam pariatur? Minus, sunt asperiores ex
+      perspiciatis aut hic, consequatureeeeeeeeeeeem ipsum dolor, sit amet
+      consectetur adipisicing elit. Blanditiis obcaecati aliquam pariatur?
+      Minus, sunt asperiores ex perspiciatis aut hic, consequatur tempora nm
+      ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis obcaecati
+      aliquam pariatur? Minus, sunt asperiores ex perspiciatis aut hic,
+      consequatur tempora nm ipsum dolor, sit amet consectetur adipisicing elit.
+      Blanditiis obcaecati aliquam pariatur? Minus, sunt asperiores ex
+      perspiciatis aut hic, consequatur tempora nm ipsum dolor, sit amet
+      consectetur adipisicing elit. Blanditiis obcaecati aliquam pariatur?
+      Minus, sunt asperiores ex perspiciatis aut hic, consequatur tempora nm
+      ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis obcaecati
+      aliquam pariatur? Minus, sunt asperiores ex perspiciatis aut hic,
+      consequatur tempora nm ipsum dolor, sit amet consectetur adipisicing elit.
+      Blanditiis obcaecati aliquam pariatur? Minus, sunt asperiores ex
+      perspiciatis aut hic, consequatur tempora nm ipsum dolor, sit amet
+      consectetur adipisicing elit. Blanditiis obcaecati aliquam pariatur?
+      Minus, sunt asperiores ex perspiciatis aut hic, consequatur tempora nm
+      ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis obcaecati
+      aliquam pariatur? Minus, sunt asperiores ex perspiciatis aut hic,
+      consequatur tempora nm ipsum dolor, sit amet consectetur adipisicing elit.
+      Blanditiis obcaecati aliquam pariatur? Minus, sunt asperiores ex
+      perspiciatis aut hic, consequatur tempora nm ipsum dolor, sit amet
+      consectetur adipisicing elit. Blanditiis obcaecati aliquam pariatur?
+      Minus, sunt asperiores ex perspiciatis aut hic, consequatur tempora nm
+      ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis obcaecati
+      aliquam pariatur? Minus, sunt asperiores ex perspiciatis aut hic,
+      consequatur tempora nm ipsum dolor, sit amet consectetur adipisicing elit.
+      Blanditiis obcaecati aliquam pariatur? Minus, sunt asperiores ex
+      perspiciatis aut hic, consequatur tempora n tempora nm ipsum dolor, sit
+      amet consectetur adipisicing elit. Blanditiis obcaecati aliquam pariatur?
+      Minus, sunt asperiores ex perspiciatis aut hic, consequatur tempora nm
+      ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis obcaecati
+      aliquam pariatur? Minus, sunt asperiores ex perspiciatis aut hic,
+      consequatur tempora n
+    </StyledWrapper>
   );
 }
 

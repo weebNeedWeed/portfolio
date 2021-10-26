@@ -50,6 +50,10 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": ["off"],
     "import/no-unresolved": "off",
     "import/extensions": "off",
+    "react/self-closing-comp": "off",
+    "jsx-a11y/anchor-has-content": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/anchor-is-valid": "off",
   },
   settings: {
     react: {

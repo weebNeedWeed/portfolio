@@ -8,20 +8,56 @@ declare module "@mui/material/styles" {
   interface ThemeOptions {
     custom?: {
       typography?: {
-        sans: string;
-        mono: string;
+        sans?: string;
+        mono?: string;
       };
-      color?: string;
+      color?: {
+        navy?: string;
+        green?: string;
+        lightestSlate?: string;
+        greenTint?: string;
+        lightNavy?: string;
+      };
+      common?: {
+        transition?: string;
+        borderRadius?: string;
+      };
     };
+  }
+
+  interface BreakpointOverrides {
+    xs: false; // removes the `xs` breakpoint
+    sm: false;
+    md: false;
+    lg: false;
+    xl: false;
+    tablet: true; // adds the `tablet` breakpoint
+    desktop: true;
   }
 }
 
 const customTheme = createTheme({
   custom: {
-    color: "blue",
     typography: {
       sans: "'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif",
       mono: "'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace",
+    },
+    color: {
+      navy: "#0a192f",
+      green: "#64ffda",
+      lightestSlate: "#ccd6f6",
+      greenTint: "rgba(100,255,218,0.1)",
+      lightNavy: "#112240",
+    },
+    common: {
+      transition: "all 0.25s cubic-bezier(0.645,0.045,0.355,1)",
+      borderRadius: "4px",
+    },
+  },
+  breakpoints: {
+    values: {
+      tablet: 0,
+      desktop: 770,
     },
   },
   components: {
@@ -53,6 +89,17 @@ const customTheme = createTheme({
           font-style: normal;
           font-weight: 600;
           src: url(${CalibreSemibold}) format('woff2');
+        }
+
+        ::-webkit-scrollbar {
+          width: 9px;
+          background-color: #0A192F;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background-color: #495670; 
+          border-right: 3px solid #0A192F;
+          border-radius: 1000px;
         }
       `,
     },
